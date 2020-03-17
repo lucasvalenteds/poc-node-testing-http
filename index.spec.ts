@@ -11,7 +11,7 @@ const failure: Failure = {
   message: "Could not find customer with ID " + customer.id,
 };
 
-describe("Using customer instance", () => {
+describe("Using custom instance", () => {
   const httpClient: AxiosInstance = Axios.create();
   const mock: AxiosMockAdapter = new AxiosMockAdapter(httpClient);
   const api: CustomerAPI = new CustomerAPIDefault(httpClient);
