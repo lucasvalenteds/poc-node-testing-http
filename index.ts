@@ -14,7 +14,7 @@ export interface CustomerAPI {
 }
 
 export class CustomerAPIDefault implements CustomerAPI {
-  public constructor(private httpClient: AxiosInstance = Axios.create()) {}
+  public constructor(private httpClient: AxiosInstance = Axios) {}
 
   async findCustomerById(id: number): Promise<Customer | Failure> {
     try {
